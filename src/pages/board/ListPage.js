@@ -1,5 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import BasicLayout from "../../layouts/BasicLayout";
+import ListComponent from "../../components/board/ListComponent";
 
 const ListPage = () => {
 
@@ -29,7 +30,9 @@ const ListPage = () => {
     console.info("List....")
 
     return ( 
-        <div></div>
+        <div>
+            Board List Page <ListComponent queryObj={queryObj}></ListComponent>
+        </div>
      );
 }
  
